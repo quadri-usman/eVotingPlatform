@@ -1,0 +1,78 @@
+<%- include('partials/header'); -%> <%- include('partials/navbar'); -%>
+
+<link rel="stylesheet" href="/report.css" />
+
+<div>
+  <form method="POST" action="/report" class="form">
+    <header id="contact-head">
+      <h1>Contact Us</h1>
+      <p>
+        <small class="contact-title"
+          >We'd love to hear from you, please send us a message</small
+        >
+      </p>
+    </header>
+    <input type="text" id="name" placeholder="Full Names" name="names" />
+    <textarea
+      name="message"
+      placeholder="Message"
+      id=""
+      cols="30"
+      rows="10"
+    ></textarea>
+    <!-- <input type="text" placeholder="Message" name="message" /> -->
+    <!-- <textarea
+      placeholder="Message"
+      name="message"
+      class="field"
+      rows="10px"
+    ></textarea> -->
+    <button type="submit" id="submit">Send</button>
+    <!-- <div class="cont-field">
+      <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        name="email"
+        autofocus
+      />
+    </div>
+
+    <div class="cont-field">
+      <textarea placeholder="Message" class="field"></textarea>
+    </div>
+
+    <div class="cont-butns">
+      <div class="cont-butn1">
+        <button type="submit" id="submit">Send</button>
+      </div>
+    </div> -->
+  </form>
+</div>
+<script>
+  $(() => {
+    $("#send").click(() => {
+      sendMessage({
+        name: $("#name").val(),
+        message: $("#message").val(),
+      });
+    });
+    getMessages();
+  });
+
+  function addMessages(message) {
+    $(`#messages`).append(`
+        <h4> ${message.name} </h4>
+        <p>  ${message.message} </p>`);
+  }
+
+  function getMessages() {
+    $.get(`http://localhost:9000/messages`, (data) => {
+      data.forEach(addMessages);
+    });
+  }
+
+  function sendMessage(message) {
+    $.post(`http://localhost:9000/messages`, message);
+  }
+</script>

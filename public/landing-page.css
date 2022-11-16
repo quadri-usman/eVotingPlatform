@@ -1,0 +1,354 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* nav-bar */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    
+}
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    align-items: center;
+    height: 100px;
+}
+/* logo */
+#logo {
+    color: #008948;
+    font-weight: bold;
+    font-size: 43px;
+}
+/* links */
+
+.links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 50%;
+    margin: 0 25px;
+}
+#nav-bar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: bold;
+}
+#nav-bar a:hover {
+    font-weight: bold;
+    color: black;
+}
+#nav-bar a:active {
+    font-weight: bold;
+}
+#menu {
+    display: none;
+    visibility: hidden;
+}
+#close-menu {
+    display: none;
+    visibility: hidden;
+}
+
+/* register */
+.outline-btn a {
+    border: 1px solid #008948;
+    padding: 15px 30px;
+    background-color: white;
+    border-radius: 5px;
+    color: #008948;
+    font-size: 20px;
+}
+.outline-btn a:hover, .no-outline-btn:hover{
+    color: white;
+    background-color: #008948;
+}
+.no-outline-btn {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 5px;
+    color: #008948;
+    border: none;
+    font-size: 20px;
+}
+
+/* landing-page */
+#landing-page {
+    background-image: url('images/voting\ woman.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    background-color: #008948;
+    color: white;
+    
+}
+#landing-page #content {
+    max-width: 1015px;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}
+#content h1 {
+    font-size: 97px;
+    font-weight: bold;  
+}
+#content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 40px 0;
+}
+#content button {
+    border: none;
+    padding: 15px 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: #008948;
+    font-size: 20px;
+    font-weight: bold;
+}
+#content button:hover {
+    background-color: #c2fde2;
+}
+
+/*  section 1 - what's evote for */
+#section-1 {
+    display: flex;
+   
+    justify-content: space-around;
+    
+    margin: 150px 70px;
+}
+#section-1 #evote p {
+    font-size: 32px;
+line-height: 32px;
+color: rgba(0, 0, 0, 0.7);
+}
+#section-1 #evote h2 {
+    font-size: 68px;
+    color: #008948;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+#evote {
+    max-width: 600px;
+    margin-top: 180px;
+}
+.no-more-words {
+    color: #EA3838;
+    font-weight: bold;
+}
+#no-more {
+    margin-top: 30px;
+}
+#no-more img {
+    margin-right: 10px;
+}
+#section-1 #no-more p {
+    font-size: 25px;
+    
+}
+#mw-img img {
+    width: 589px;
+height: 684px;
+}
+
+/* section 2 - powerful voting platform */
+
+#section-2 {
+    background-color: #008948;
+    padding: 100px;
+    
+}
+#top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    
+}
+#top-section #content {
+    max-width: 700px;
+    text-align: left;
+    
+}
+#top-section #content h2 {
+    font-size: 58px;
+    color: white;
+    
+}
+#top-section #content p {
+    font-size: 18px;
+    color: white;
+}
+#top-section img {
+    width: 120%;
+}
+#section-2 #bottom-section {
+    margin-top: 200px;
+}
+#section-2 #bottom-section span{
+   font-size: 50px;
+    
+    
+    color: white;
+}
+#section-2 #bottom-section p {
+    font-style: italic;
+    color: white;
+    font-size: 79px;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+}
+#section-2 #bottom-section blockquote {
+    text-align: right;
+    color: white;
+    font-size: 47px;
+    font-weight: bold;
+}
+
+/* section 3 - Eye */
+#section-3 {
+    background-image: url('images/eye-man.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 110px 100px;
+    display: flex;
+}
+
+#section-3 p {
+    font-size: 59px;
+    color: white;
+    
+}
+#section-3 button {
+    border: none;
+    padding: 15px 50px;
+    background-color: white;
+    border-radius: 5px;
+    color: #008948;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+#section-3 button:hover {
+    background-color: #c2fde2;
+}
+
+/* section 4 - FAQs */
+#section-4{
+    padding: 50px 100px;
+    
+}
+#section-4 #faqs-top {
+    text-align: center;
+}
+#section-4 #faqs-top h2 {    
+    color: #008948;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+#section-4 #faqs-top p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+#faqs-bottom{
+    display: block;
+}
+#faq {
+    margin-bottom: 20px;
+    border: 1px solid #008948;
+}
+
+#faq #label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    padding: 20px 40px;
+}
+#faq #label p {
+    color: #008948;
+}
+#faq #content {
+    border-top: 1px solid rgba(190, 190, 190, 0.7);
+    padding: 0px 60px;
+    
+    /* height: 0px;
+    overflow: hidden; */
+    
+}
+#faq .active #content {
+    height: auto;
+}
+#faq #content p {
+    font-size: 18px;
+    max-width: 1000px;
+    
+}
+
+/* footer */
+footer {
+    background-color: #008948;
+    padding: 0 20px;
+}
+#footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    color: white;
+    max-width: 70%;
+}
+#footer-top p {
+    font-size: 57px;
+}
+#footer-top #about-us h3 {
+    font-size: 24px;
+}
+#footer-top #about-us p {
+    font-size: 18px;
+    max-width: 250px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+#footer-top #pages h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+#footer-top #pages ul {
+    list-style-type: none;
+}
+#footer-top #pages li {
+    margin-top: 10px;
+}
+#footer-top #pages a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding: 25px 100px;
+    color: white;
+    
+}
+#social-icons img {
+    margin-right: 30px;
+}
+
+

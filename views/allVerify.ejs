@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/dashboard.css" />
+<link rel="stylesheet" href="/dashboard-mobile.css" />
+
+<section id="verify">
+  <div id="logo">
+    <a href="/" style="color: black"
+      ><img
+        src="<%= '/images/eVote.png' %>"
+        alt="logo"
+        class="logo-img"
+      /><span></span>
+    </a>
+  </div>
+  <div id="top">
+    <h2>Verification</h2>
+    <p>
+      Before you are allowed to vote we need to verify your identity and be sure
+      that you are a legal citizen of Nigeria.
+    </p>
+
+    <h3>Means of Verification</h3>
+  </div>
+
+  <div id="middle">
+    <div id="nin">
+      <img src="/IMAGES/nin-ver.png" alt="" />
+      <h3>NIN Verification</h3>
+      <p>
+        Here you are advised to make use of your nin idcard for this
+        verification process.
+      </p>
+      <button><a href="/ninVerify">Verify NIN</a></button>
+    </div>
+
+    <div id="face">
+      <img src="/IMAGES/face-ver.png" alt="" />
+      <h3>Face Verification</h3>
+      <p>
+        Here we verify your physical appearance with the id sent to us and
+        correspond the information if you are whom you claim.
+      </p>
+      <button id="face-btn"><a href="/faceVerify">Verify Face</a></button>
+    </div>
+  </div>
+</section>
+
+<script src="<%= 'js/citizen-dashboard.js' %>"></script>

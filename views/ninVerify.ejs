@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/Login.css" />
+
+<form action="/ninVerify" method="post" class="signupform">
+  <div class="signupeVote">
+    <div id="logo">
+      <a href="/" style="color: black"
+        ><img
+          src="<%= '/images/eVote.png' %>"
+          alt="logo"
+          class="logo-img"
+        /><span></span>
+      </a>
+    </div>
+
+    <h2 style="color: orange">vNIN Verification</h2>
+    <p style="line-height: 30px; font-size: 20px">
+      Don't have a vNIN, Virtual NIN consists of 16 alpha-numeric characters
+      that can be generated using: 1) NIMC official mobile app 2) USSD -
+      *346*3*customer NIN*696739# <span> Identitypass Short Code: 696739</span>
+    </p>
+    <label for="username">vNIN Number</label>
+    <input
+      type="number"
+      name="number"
+      placeholder="Enter your generated vNIN"
+      style="padding: 25px 0"
+    />
+    <button type="submit">Verify</button>
+  </div>
+  <div class="signupWe">
+    <div class="signupWeh2">
+      <h2>we are the <span>GOVERNMENT</span></h2>
+    </div>
+    <div class="signupimage">
+      <img src="images/hand.png" alt="" width="300px" height="420px" />
+    </div>
+  </div>
+</form>

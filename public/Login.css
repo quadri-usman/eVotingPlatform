@@ -1,0 +1,88 @@
+*, body{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+background-image: url(images/background.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-blend-mode: lighten;
+
+/* opacity: 0.5; */
+}
+form{
+  display: flex;
+  justify-content: space-between;
+}
+div.signupeVote{
+  width: 30%;
+  padding: 30px 80px;    
+  background: white;
+  margin-top: 50px;
+}
+div.signupeVote h1{
+  color: #008948;
+  margin-bottom: 30px;
+}
+div#logo{
+  margin-bottom: 50px;
+  text-align: center;
+}
+.signupeVote input{
+  margin: 15px 0;
+  background: #DAEEE4;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  color: #555555;
+  font-size: 16px;
+  border: none;
+}
+.signupeVote button{
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  background: #008948;
+  box-shadow: 0px 8px 12px rgba(66, 71, 109, 0.2);
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  border: none;
+}
+.down-mobile{
+  text-align: center;
+  line-height: 20px;
+}
+.down-mobile a{
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+div.signupWe {
+  display: flex;
+  width: 55%;
+  flex-direction: row;
+  padding: 0;
+  justify-content: center;    
+  align-items: center;
+  margin: 0;
+}
+.signupWe h2{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: #008948;
+  background-color: #DAEEE4;
+  padding: 20px;    
+}
+.signupWe span{
+  color: red;
+}
+.signupimage img{    
+position: relative;
+right: 80px;
+bottom: -120px;
+}

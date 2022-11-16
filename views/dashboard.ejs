@@ -1,0 +1,134 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+  crossorigin="anonymous.css"
+/>
+
+<link rel="stylesheet" href="/dashboard.css" />
+<link rel="stylesheet" href="/dashboard-mobile.css" />
+<script src="citizen-dashboard.js"></script>
+
+<!-- nav-bar -->
+<header>
+  <div id="logo">
+    <a href="/" style="color: black"
+      ><img
+        src="<%= '/images/eVote.png' %>"
+        alt="logo"
+        class="logo-img"
+      /><span></span>
+    </a>
+  </div>  
+  <div id="nav-bar">
+    <div id="links">      
+        <a href="">Profile</a>
+        <a href="/vote">Vote</a>
+        <a href="/report">Report</a>
+        <a href="">Community</a>
+        <a href="">Health</a>
+      </div>
+      <ul class="nav navbar-nav" id="nav-bar-right">
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i class="fa-solid fa-user"></i><span class="caret"></span
+          ></a>
+          <ul class="dropdown-menu">            
+            <li><a href="/changepassword" class="nav-link">Edit Profile</a></li>
+            <li>
+              <a href="/changepassword" class="nav-link">Change Password</a>
+            </li>
+            <li><a href="/NINVerify" class="nav-link">vNIN Verification</a></li>
+            <li>
+              <a href="/faceVerify" class="nav-link">Face Verification</a>
+            </li>
+            <li><a href="/logout" class="nav-link">Logout</a></li>
+          </ul>
+        </li>      
+      </ul> 
+      <img src="/IMAGES/empty-photo.png" alt="" id="open"
+        />
+        <a href="/logout" class="nav-link">Logout</a>
+  </div>
+    <!-- <% if (!currentUser){ %>
+    <button class="no-outline-btn">
+      <a href="/register"> Create account</a>
+    </button>
+    <button class="no-outline-btn">
+      <a href="/login"> Login</a>
+    </button>
+    <% } else{ %>
+    <div id="user">
+      <div>
+        <a href="/logout" class="nav-link">Logout</a>
+      </div>
+    </div>
+    <% }%> -->
+  </div>
+</header>
+
+<!-- section-1 vote leader of your choice -->
+<section id="section-1">
+  <p>Vote the Leader of your Choice</p>
+</section>
+
+<!-- section-2 dashboard -->
+<section id="section-2">
+  <div id="container">
+    <div id="dashboard">
+      <div>
+        <img src="/IMAGES/mohammad.png" alt="" id="img" /><img
+          src="/IMAGES/empty-photo.png"
+          alt=""
+          id="empty-img"
+        />
+      </div>
+
+      <div id="profile">
+        <p>Mohammad Kabir Aliyu</p>
+        <small>aliyukmohammad@gmail.com</small>
+        <small>Niger State.</small>
+        <button><a href="/changepassword">Edit Profile</a></button>
+      </div>
+
+      <div id="about-me">
+        <h2>About me</h2>
+        <p>
+          Kabir is a Trained and Certified Product Designer. he is known for his
+          empathetic designs based on users' needs. #UsersInMind
+        </p>
+        <small>Unverified</small>
+      </div>
+
+      <div id="id-verification">
+        <h3>Identity Verification</h3>
+        <p>
+          your identity hasn’t being verified, you won’t be able to vote unless
+          you verify your identity, you need to have your nin to do this.
+        </p>
+        <small><a href="/allVerify">Verify Now</a></small>
+      </div>
+
+      <div id="health-care">
+        <p>
+          Call for Medical <br />
+          Assitance
+        </p>
+        <small>coming soon</small>
+      </div>
+    </div>
+
+    <div id="days-left">
+      <p>Remaining</p>
+      <h1>234</h1>
+      <p>days before you can <br />VOTE</p>
+    </div>
+  </div>
+</section>
+

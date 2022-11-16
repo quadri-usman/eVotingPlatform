@@ -1,0 +1,80 @@
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 20px 20px;
+    }
+    #nav-bar {
+        flex-direction: column-reverse;
+        height: 600px;
+        overflow: hidden;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        background-color: white;
+        top: -800px;
+        transition: 0.2s;
+        left: 0;
+        width: 100vw;
+        padding: 0px;
+
+        
+    }
+    #nav-bar ul {
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-bottom: 250px;
+        margin-right: 0px;
+    }
+    #nav-bar ul li {
+        margin-top: 20px;
+    }
+    #user{
+        margin-bottom: 30px;
+    }
+    #menu {
+        display: block;
+        visibility: visible;
+    }
+    #close-menu {
+        display: none;
+        visibility: visible;
+    }
+
+
+    #section-2 {
+        padding: 20px;
+    }
+    #container {
+        flex-direction: column-reverse;
+        padding: 10px;
+        
+    }
+    #days-left {
+        margin-bottom: 60px;
+    }
+    #days-left h1 {
+        font-size: 150px;
+    }
+
+    
+
+    #verify {
+        padding: 20px 20px;
+        margin: 10px 10px;
+    }
+    #middle {
+        flex-direction: column;
+    }
+
+    #nin {
+        margin-bottom: 20px;
+    }
+
+
+    #id-verify {
+        margin: 10px;
+        padding: 20px;
+    }
+    #face-tab {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,83 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+  integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+  crossorigin="anonymous.css"
+/>
+<link rel="stylesheet" href="/landing-page.css" />
+<link rel="stylesheet" href="/landing-page-mobile.css" />
+
+<header>
+  <div id="">
+    <div id="logo">
+      <a href="/" style="color: black"
+        ><img
+          src="<%= '/images/eVote.png' %>"
+          alt="logo"
+          class="logo-img"
+        /><span></span>
+      </a>
+    </div>
+  </div>
+  <div id="menu">
+    <img src="<%= '/images/icon-menu.svg' %>" alt="" id="img" />
+  </div>
+  <div id="close-menu">
+    <img src="<%= '/images/icon-close-menu.svg' %>" alt="" id="img" />
+  </div>
+  <div id="nav-bar">
+    <div class="links">
+      <a href="">Home</a>
+      <a href="/vote">Election</a>
+      <a href="">Get Help</a>
+      <a href="/report">Chat with Gov</a>
+      <a href="#faq">FAQs</a>
+    </div>
+
+    <div id="register">
+      <% if (!currentUser){ %>
+      <button class="no-outline-btn">
+        <a href="/register"> Create account</a>
+      </button>
+      <button class="no-outline-btn">
+        <a href="/login"> Login</a>
+      </button>
+
+      <% } else{ %>
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a
+            href="#"
+            class="dropdown-toggle"
+            data-toggle="dropdown"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><i class="fa-solid fa-user"></i><span class="caret"></span
+          ></a>
+          <ul class="dropdown-menu">
+            <li><a href="/changepassword" class="nav-link">Edit Profile</a></li>
+            <li>
+              <a href="/changepassword" class="nav-link">Change Password</a>
+            </li>
+            <li><a href="/NINVerify" class="nav-link">vNIN Verification</a></li>
+            <li>
+              <a href="/faceVerify" class="nav-link">Face Verification</a>
+            </li>
+            <li><a href="/logout" class="nav-link">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a href="/logout" class="nav-link">Logout</a>
+      <!-- <a href="/logout" class="nav-link">Logout</a> -->
+      <% }%>
+    </div>
+  </div>
+</header>
+<% if(error && error.length>0){ %>
+<div class="alert alert-primary" role="alert"><%= error %></div>
+<% } else if(success &&success.length>0){ %>
+<div class="alert alert-success" role="alert"><%= success %></div>
+<% } else if(welcome && welcome.length>0){ %>
+<div class="alert alert-info" role="alert"><%= welcome %></div>
+<% }%>
